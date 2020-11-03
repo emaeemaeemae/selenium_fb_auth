@@ -1,5 +1,5 @@
 '''
-    Программа для авторизации в ФБ через Chrome
+    Программа для авторизации в ФБ через Google Chrome
 '''
 
 from selenium import webdriver
