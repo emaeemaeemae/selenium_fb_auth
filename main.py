@@ -26,9 +26,9 @@ driver = webdriver.Chrome(chrome_options=option)
 driver.get('https://facebook.com')
 
 # ввод логина пароля, клик по кнопке
-driver.find_element_by_xpath('''//*[@id="email"]''').send_keys('')  # логин
+driver.find_element_by_xpath('''//*[@id="email"]''').send_keys(input('Введите логин: '))  # логин
 time.sleep(sleeptime)
-driver.find_element_by_xpath('''//*[@id="pass"]''').send_keys('')  # пароль
+driver.find_element_by_xpath('''//*[@id="pass"]''').send_keys(input('Введите пароль'))  # пароль
 time.sleep(sleeptime)
 driver.find_element_by_xpath('''//*[@id="u_0_b"]''').click()
 time.sleep(sleeptime)
