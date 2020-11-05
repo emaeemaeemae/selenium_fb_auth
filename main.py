@@ -7,6 +7,7 @@ from selenium.webdriver.chrome.options import Options
 import time
 
 sleeptime = 3
+
 # опции хрома
 # ----------------------------------------------------------------------------------------
 option = Options()
@@ -28,9 +29,9 @@ driver.get('https://facebook.com')
 # ввод логина пароля, клик по кнопке
 driver.find_element_by_xpath('''//*[@id="email"]''').send_keys(input('Введите логин: '))  # логин
 time.sleep(sleeptime)
-driver.find_element_by_xpath('''//*[@id="pass"]''').send_keys(input('Введите пароль'))  # пароль
+driver.find_element_by_xpath('''//*[@id="pass"]''').send_keys(input('Введите пароль: '))  # пароль
 time.sleep(sleeptime)
-driver.find_element_by_xpath('''//*[@id="u_0_b"]''').click()
+driver.find_element_by_xpath('''//*[@id="u_0_b"]''').click()  # клик по кнопке
 time.sleep(sleeptime)
 
 # переход на страницу с настройками
